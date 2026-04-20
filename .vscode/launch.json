@@ -1,0 +1,93 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Quick Test (3 projects)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "delphic_llm.evaluation.run_experiment",
+      "args": [
+        "--data",
+        "data/nasa93.csv",
+        "--n",
+        "3",
+        "--seeds",
+        "42",
+        "--conditions",
+        "delphic_full",
+        "b1",
+        "--output",
+        "results/test/"
+      ],
+      "justMyCode": false,
+      "env": {
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Full Experiment (50 projects, 3 seeds)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "delphic_llm.evaluation.run_experiment",
+      "args": [
+        "--data",
+        "data/nasa93.csv",
+        "--n",
+        "50",
+        "--seeds",
+        "42",
+        "43",
+        "44",
+        "--conditions",
+        "delphic_full",
+        "b1",
+        "b2",
+        "b3",
+        "abl1",
+        "abl2",
+        "--abl3_n",
+        "20",
+        "--output",
+        "results/"
+      ],
+      "justMyCode": false,
+      "env": {
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Generate Paper Tables",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "delphic_llm.evaluation.generate_tables",
+      "args": [
+        "--results",
+        "results/"
+      ],
+      "justMyCode": false,
+      "env": {
+        "PYTHONUTF8": "1"
+      },
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Generate Tables (from quick test)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "delphic_llm.evaluation.generate_tables",
+      "args": [
+        "--results",
+        "results/test/"
+      ],
+      "justMyCode": false,
+      "env": {
+        "PYTHONUTF8": "1"
+      },
+      "console": "integratedTerminal"
+    }
+  ]
+}
