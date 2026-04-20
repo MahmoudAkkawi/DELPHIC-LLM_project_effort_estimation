@@ -55,7 +55,7 @@ pip install openai pandas numpy scikit-learn sentence-transformers tqdm
 ### Installation
 
 ```bash
-git clone https://github.com/yourusername/delphic-llm.git
+git clone https://github.com/MahmoudAkkawi/DELPHIC-LLM_project_effort_estimation.git
 cd delphic-llm
 pip install -r requirements.txt
 ```
@@ -95,44 +95,6 @@ print(f"Technique convergence τ: {result['tau']:.3f}")
 print(result['risk_register'])
 print(result['recommendations'])
 ```
-
----
-
-## 📂 Repository Structure
-
-```
-delphic-llm/
-├── src/
-│   ├── orchestrator.py          # Orchestrator Agent (OA) implementation
-│   ├── pm_expert_agent.py       # PM-Expert agent with dispositions
-│   ├── deliberation_protocol.py # Three-round protocol (R1, R2, R3)
-│   ├── sycophancy_detector.py   # Embedding-based sycophancy detection
-│   ├── confidence_profile.py    # Four-axis confidence computation
-│   ├── knowledge_base.py        # PMBOK/PRINCE2/ISO/Agile knowledge + PETSI
-│   ├── petsi.py                 # Project Estimation Technique Suitability Index
-│   └── utils.py                 # Helper functions
-├── data/
-│   └── nasa93.csv               # NASA93 benchmark dataset
-├── experiments/
-│   ├── run_experiment.py        # Full experimental pipeline
-│   ├── baselines.py             # B1, B2, B3, ABL-1, ABL-2 implementations
-│   └── evaluation.py            # Metrics: MMRE, MdMRE, PRED(k)
-├── results/
-│   ├── results_seed42.json      # Seed 42 results
-│   ├── results_seed43.json      # Seed 43 results
-│   ├── results_seed44.json      # Seed 44 results
-│   └── results_final.json       # Aggregated results
-├── notebooks/
-│   ├── demo.ipynb               # Interactive demonstration
-│   └── analysis.ipynb           # Results analysis and visualization
-├── tests/
-│   └── test_framework.py        # Unit tests
-├── requirements.txt
-├── setup.py
-├── LICENSE
-└── README.md
-```
-
 ---
 
 ## 🔬 Experimental Design
