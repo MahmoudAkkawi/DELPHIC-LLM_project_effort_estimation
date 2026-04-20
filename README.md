@@ -31,6 +31,8 @@ Evaluated on the NASA93 benchmark (n=50 per seed, 3 independent seeds):
 | **PRED(25)** | 31.6% | 27.3% | 31.3% | +4.3pp vs PERT |
 | **PRED(50)** | 49.6% | 43.3% | 46.7% | +6.3pp vs PERT |
 
+![r1](images\r1.png)
+
 **Deliberation Quality:**
 - Sycophancy rate: 13.9% ± 2.4% (consistent across seeds)
 - Ablation: removing sycophancy detection increases MMRE by 4.2%
@@ -123,7 +125,7 @@ print(result['recommendations'])
 
 ## 🏗️ Architecture
 
-
+![DELPHIC-LLM Architecture](images/architecture.png)
 ---
 
 ## 📊 Reproducing Results
