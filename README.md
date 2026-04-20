@@ -40,7 +40,6 @@ Evaluated on the NASA93 benchmark (n=50 per seed, 3 independent seeds):
 **Economics:**
 - **$0.119 per decision pack** (≈£0.09)
 - **>99% cost reduction** vs facilitated human Delphi sessions (£9,720–£54,000)
-
 ---
 
 ## 🚀 Quick Start
@@ -124,57 +123,6 @@ print(result['recommendations'])
 
 ## 🏗️ Architecture
 
-```
-┌─────────────────────────────────────────────────────────┐
-│  INPUT: Project Knowledge Document (PKD)                │
-│  PKD₁ context · PKD₂ scope · PKD₃ team · PKD₄ artefacts│
-│  PKD₅ analogues · PKD₆ risks                            │
-└──────────────────┬──────────────────────────────────────┘
-                   │
-                   ↓
-┌─────────────────────────────────────────────────────────┐
-│  TIER 1: Orchestrator Agent (OA)                        │
-│  ┌──────────┬──────────┬──────────┬──────────┐         │
-│  │ Argument │Sycophancy│Convergence│ Quality- │         │
-│  │ Quality  │Detection │Monitoring │ Weighted │         │
-│  │ Scoring  │ (embed.  │   (κ)     │Synthesis │         │
-│  │ (Q₁–Q₅)  │+ shift)  │           │ (G, Ω)   │         │
-│  └──────────┴──────────┴──────────┴──────────┘         │
-└─────────┬──────────────┬──────────────┬────────────────┘
-          │              │              │
-          ↓              ↓              ↓
-┌─────────────┐  ┌─────────────┐  ┌─────────────┐
-│  D₁: AI     │  │  D₂: AI     │  │  D₃: AI     │
-│  Expert     │  │  Expert     │  │  Expert     │
-│  Agent      │  │  Agent      │  │  Agent      │
-├─────────────┤  ├─────────────┤  ├─────────────┤
-│ Risk-Aware  │  │ Delivery-   │  │ Efficiency- │
-│ Conservative│  │ Focused     │  │ Oriented    │
-│             │  │ Balanced    │  │ Optimising  │
-├─────────────┤  ├─────────────┤  ├─────────────┤
-│ R2 Role:    │  │ R2 Role:    │  │ R2 Role:    │
-│ Challenger  │  │ Builder     │  │ Risk Analyst│
-└──────┬──────┘  └──────┬──────┘  └──────┬──────┘
-       │                │                │
-       └────────────────┴────────────────┘
-                        │
-                ┌───────┴───────┐
-                │  Shared KB K  │
-                │  PMBOK·PRINCE2│
-                │  ISO·Agile    │
-                └───────────────┘
-                        │
-                        ↓
-          ┌─────────────────────────────┐
-          │  Output: Decision Pack Ω    │
-          │  • Consensus ê + 80% CI     │
-          │  • Confidence (4 axes)      │
-          │  • Argument graph G=(V,E)   │
-          │  • Risk register            │
-          │  • Recommendations          │
-          │  • Technique signal τ       │
-          └─────────────────────────────┘
-```
 
 ---
 
