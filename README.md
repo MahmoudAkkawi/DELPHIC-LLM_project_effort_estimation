@@ -263,10 +263,8 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 
 ## 🔗 Links
 
-- **Documentation**: [Full API Documentation](docs/)
-- **Dataset**: NASA93 available in `data/nasa93.csv`
+- **Dataset**: NASA93 available at https://github.com/timm/ourmine/blob/master/our/arffs/effest/nasa93.arff
 - **Issues**: [GitHub Issues](https://github.com/yourusername/delphic-llm/issues)
-
 
 ---
 
